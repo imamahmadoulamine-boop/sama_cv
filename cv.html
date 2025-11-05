@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="cv.css">
 </head>
 <body>
+  <button id="modeToggle">🌙 Mode sombre</button>
 
   <div class="container py-5">
     <div class="d-flex flex-md-row flex-column-reverse">
@@ -72,6 +73,20 @@
       </div>
     </div>
   </div>
+  <script>
+  const button = document.getElementById('modeToggle');
+  const body = document.body;
+
+  button.addEventListener('click', () => {
+    body.classList.toggle('dark-mode'); // Active ou désactive le mode sombre
+
+    if (body.classList.contains('dark-mode')) {
+      button.textContent = '☀ Mode clair';
+    } else {
+      button.textContent = '🌙 Mode sombre';
+    }
+  });
+</script>
 
 </body>
 </html>

@@ -3,7 +3,18 @@ body {
   background: color #ffffff62 ;
   color: #191919;
 }
+/* Mode clair (par défaut) */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.4s, color 0.4s;
+}
 
+/* Mode sombre */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
 h2, h5 {
   color: #5a3b02;
 }
